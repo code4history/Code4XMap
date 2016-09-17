@@ -46,8 +46,40 @@ namespace Code4XMap
 				me.RunOnUiThread(()=>{me.Title = view.Title;});
 			};
 
-			return rootView;
+			var onkey = new OnKeyListner(view);
+			view.SetOnKeyListener(onkey);
 
+			return rootView;
+		}
+	}
+
+	public class OnKeyListner : Java.Lang.Object, View.IOnKeyListener
+	{
+		WeakReference<CXWebView> WebView;
+
+		public OnKeyListner (CXWebView webView) : base()
+		{
+			WebView = new WeakReference<CXWebView>(webView);
+		}
+	
+        public bool OnKey(View v, Keycode k, KeyEvent e)
+		{
+			if (e.Action == KeyEventActions.Down && k.Equals(Keycode.Back))
+			{
+				CXWebView webView;
+				WebView.TryGetTarget(out webView);
+				if (webView == null) return false;
+				if (webView.CanGoBack())
+				{
+					webView.GoBack();
+					return true;
+				}
+				else 
+				{
+					return false;
+				}
+			}
+			return false;
 		}
 	}
 }

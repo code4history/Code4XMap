@@ -30,6 +30,28 @@ namespace Code4XMap
 				this.Title = webView.Title;
 			};
 		}
+
+		public override void ViewDidLoad()
+		{
+			base.ViewDidLoad();
+
+			this.NavigationItem.SetHidesBackButton(true, true);
+			var back = new UIBarButtonItem("< Back", UIBarButtonItemStyle.Plain, this, new ObjCRuntime.Selector("didBackButtonTap:"));
+			this.NavigationItem.LeftBarButtonItem = back;
+		}
+
+		[Export("didBackButtonTap:")]
+		public void DidBackButtonTap(UIBarButtonItem item) {
+			var webView = (UIWebView)View;
+			if (webView.CanGoBack)
+			{
+				webView.GoBack();
+			}
+			else 
+			{
+				this.NavigationController.PopViewController(true);
+			}
+		}
 	}
 }
 
