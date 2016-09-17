@@ -1,6 +1,4 @@
 Components/
-AtCreationMap/bin
-AtCreationMap/obj
 packages
 .DS_Store
 *.apk
