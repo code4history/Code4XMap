@@ -1,46 +1,22 @@
-﻿<Properties StartupConfiguration="{9D67AE8C-D04E-45EB-9F52-821396FBBFF3}|Default">
+﻿<Properties StartupConfiguration="{B2184057-0A4F-4A34-B90E-C79E84D8EDC6}|Default">
   <MonoDevelop.Ide.ItemProperties.library.Code4XMap.Code4XMap.Droid PreferredExecutionTarget="Android.003e823f2559cb58" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="NaraHinan/NaraHinan.Droid/apikey.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NaraHinan/data/tilemap.jp/NaraHinan/hanrei.html">
     <Files>
       <File FileName="Code4XMap/Code4XMap.Touch/src/View/CXWebView.cs" Line="131" Column="1" />
       <File FileName="NaraHinan/NaraHinan.Droid/Resources/values/colors.xml" Line="5" Column="37" />
       <File FileName="NaraHinan/NaraHinan.Touch/Info.plist" />
       <File FileName="NaraHinan/NaraHinan.Touch/apikey.plist" />
       <File FileName="NaraHinan/NaraHinan.Droid/apikey.xml" Line="1" Column="1" />
+      <File FileName="NaraHinan/data/manifest.json" Line="1" Column="1" />
+      <File FileName="NaraHinan/data/tilemap.jp/NaraHinan/hanrei.html" Line="48" Column="27" />
+      <File FileName="Code4XMap/Code4XMap.Shared/src/Core/CXTabController.cs" Line="29" Column="1" />
+      <File FileName="Code4XMap/Code4XMap.Touch/src/CXWebController_iOS.cs" Line="11" Column="1" />
+      <File FileName="Code4XMap/Code4XMap.Droid/src/View/CXWebView.cs" Line="155" Column="1" />
+      <File FileName="Code4XMap/Code4XMap.Shared/src/Core/CXStorageManager.cs" Line="33" Column="5" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Code4XMap" expanded="True">
-            <Node name="appli" expanded="True">
-              <Node name="NaraHinan" expanded="True">
-                <Node name="NaraHinan.Droid" expanded="True">
-                  <Node name="Resources" expanded="True">
-                    <Node name="values" expanded="True" />
-                  </Node>
-                  <Node name="app.config" selected="True" />
-                </Node>
-                <Node name="NaraHinan.Touch" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="library" expanded="True">
-              <Node name="Code4XMap" expanded="True">
-                <Node name="Code4XMap.Touch" expanded="True">
-                  <Node name="ComponentReferenceFolder" expanded="True" />
-                  <Node name="Packages" expanded="True" />
-                  <Node name="src" expanded="True">
-                    <Node name="View" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.appli.NaraHinan.NaraHinan.Droid PreferredExecutionTarget="Android.003e823f2559cb58" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Ad-Hoc|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -8,7 +8,7 @@
         <style>
             /* App custom styles */
 	/* jQuery Mobileのリスト内の文字を折り返す
-　	cssのセレクターでaタグを特定
+	cssのセレクターでaタグを特定
 	*/
       .ui-header .ui-title {
         /*margin: .6em 30% .8em;*/
@@ -37,20 +37,23 @@
     <div data-role="content" data-theme="d">
     <h3>このアプリケーションについて</h3>
 	<p>このアプリケーションは、奈良市の避難所オープンデータを用いてその場所をマッピングしたものです。<br>
-	現在は避難所のポイントデータのみですが、将来的にはハザードマップ、活断層マップ、明治期の低湿地マップ等を一緒に閲覧できるアプリにしたいと考えております。<br>
+	また、国土地理院の都市圏活断層マップ、明治期の低湿地マップ等も背景に表示しております。<br>
+	許諾などが取れれば、奈良市など作成のハザードマップなども主題図として一緒に閲覧できるアプリにしたいと考えております。<br>
+	<br>
 	また、同じプログラムを利用した他地域他テーマでのアプリ作成等も可能です。<br>
 	Code for NARAまでお問い合わせください。</p>
     </div>
     <div data-role="content" data-theme="d">
     <h3>ライセンス</h3>
-	<p>このアプリケーションは以下の著作物を改変して利用しています。</p>
+	<p>このアプリケーションは以下の著作物を利用しています。</p>
 	<ul>
 		<li>避難所データ、奈良市、<a href="browser:http://creativecommons.org/licenses/by/2.1/jp/">クリエイティブ・コモンズ・ライセンス 表示 2.1</a></li>
+		<li>背景主題図、国土地理院、<a href="browser:http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html">国土地理院コンテンツ利用規約</a></li>			
 	</ul>
     </div>
 
     <div data-role="content">
-        <h3>種別の定義</h3>
+        <h3>避難所種別の定義 (奈良市の避難所オープンデータを利用)</h3>
         <ul data-role="listview" data-theme="d">
             <li data-theme="b">一次避難所</li>
             <li data-for="hinanjo">避難のための立退きを行った居住者、滞在者その他の者を避難のために必要な間滞在させ、又は自ら居住の場所を確保することが困難な被災した住民その他の被災者を一時的に滞在させるための施設</li>
@@ -61,6 +64,17 @@
         </ul>
     </div>
 
+    <div data-role="content">
+        <h3>背景主題図 (地理院地図のコンテンツを利用)</h3>
+        <ul data-role="listview" data-theme="d">
+			<li data-theme="b">都市圏活断層図</li>
+            <li data-for="danso_hanrei"><a rel="external" href="https://docs.google.com/viewer?url=http://www.gsi.go.jp/common/000084060.pdf">凡例を表示</a></li>
+            <li data-for="danso_tebiki"><a rel="external" href="http://www.gsi.go.jp/bousaichiri/use.html">利用の手引</a></li>
+			<li data-theme="b">明治期の低湿地データ</li>
+			<li data-for="shicchi_hanrei"><a rel="external" href="https://docs.google.com/viewer?url=http://cyberjapandata.gsi.go.jp/legend/SWALE_hanrei.pdf">凡例を表示</a></li>
+            <li data-for="shicchi_tebiki"><a rel="external" href="http://www.gsi.go.jp/bousaichiri/lc_meiji.html">利用の手引</a></li>
+        </ul>
+    </div>
   </div>
 </body>
 </html>

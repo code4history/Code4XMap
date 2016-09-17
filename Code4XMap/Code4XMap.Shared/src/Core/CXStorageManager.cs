@@ -29,6 +29,7 @@ namespace Code4XMap
 			{".js", "application/x-javascript"},
 			{".png", "image/png"},
 			{".zip", "application/x-zip-compressed"},
+			{".pdf", "application/pdf"}
 		};
 
 		protected CXStorageManager () : base()
