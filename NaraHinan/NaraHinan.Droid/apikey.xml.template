@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="gmap">[Google Maps API Key]</string>
+	<string name="hockey">[Hockey App SDK Key (Blank if don't use)]</string>
+</resources>

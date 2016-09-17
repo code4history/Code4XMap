@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{91970697-D1AB-40D9-92AD-AA88A2025AE0}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Code4XMap</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)src\" />
+    <Folder Include="$(MSBuildThisFileDirectory)src\Core\" />
+    <Folder Include="$(MSBuildThisFileDirectory)src\Util\" />
+    <Folder Include="$(MSBuildThisFileDirectory)src\Map\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)src\Core\CXManifest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Core\CXMapController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Core\CXMemoryManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Core\CXSplashController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Core\CXTabController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Core\CXToggleListController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Core\CXModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Core\CXStorageManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Core\IMvvm.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Map\CXWebTilesUrlConstructor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Util\CXAbstractSingleton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Core\CXItemListController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Core\CXListController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Core\CXWebController.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>gmap</key>
+	<string>[Google Maps API Key]</string>
+	<key>hockey</key>
+	<string>[Hockey App SDK Key (Blank if don't use)]</string>
+</dict>
+</plist>

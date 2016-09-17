@@ -1,0 +1,3 @@
+[submodule "TileMapJP"]
+	path = TileMapJP
+	url = git@git.assembla.com:chizusupport.TileMapJPCommon.git

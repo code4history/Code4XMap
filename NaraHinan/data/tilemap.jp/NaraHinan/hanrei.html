@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>奈良市避難所マップ</title>
+  <link rel="stylesheet" href="lib/jquery.mobile-1.1.1.min.css" />
+        <style>
+            /* App custom styles */
+	/* jQuery Mobileのリスト内の文字を折り返す
+　	cssのセレクターでaタグを特定
+	*/
+      .ui-header .ui-title {
+        /*margin: .6em 30% .8em;*/
+        margin: .6em 5% .8em;
+      }
+	h1{
+    	white-space: normal!important;
+	font-size : 13px!important;
+	}
+        </style>
+  <script src="lib/jquery-1.7.1.min.js"></script>
+  <script src="lib/jquery.mobile-1.1.1.min.js"></script>
+</head>
+<body>
+
+  <!-- ぺージ -->
+  <div data-role="page" id="page1" data-theme="d">
+    <div data-role="content" data-theme="d">
+    <h3>Code for NARAについて</h3>
+	<p>「奈良を知り、奈良を育む」という理念に基づき、ITを活用して慣らしをより良くしていくための団体です。 奈良市の特徴を活かし、地域活性化にも貢献すべく活動中です。<br></p>
+	<ul>
+		<li>facebook: <a href="browser:https://www.facebook.com/Code4Nara">www.facebook.com/Code4Nara</a></li>
+		<li>Twitter: <a href="browser:https://twitter.com/Code4Nara">@Code4Nara</a></li>
+	</ul>
+    </div>
+    <div data-role="content" data-theme="d">
+    <h3>このアプリケーションについて</h3>
+	<p>このアプリケーションは、奈良市の避難所オープンデータを用いてその場所をマッピングしたものです。<br>
+	現在は避難所のポイントデータのみですが、将来的にはハザードマップ、活断層マップ、明治期の低湿地マップ等を一緒に閲覧できるアプリにしたいと考えております。<br>
+	また、同じプログラムを利用した他地域他テーマでのアプリ作成等も可能です。<br>
+	Code for NARAまでお問い合わせください。</p>
+    </div>
+    <div data-role="content" data-theme="d">
+    <h3>ライセンス</h3>
+	<p>このアプリケーションは以下の著作物を改変して利用しています。</p>
+	<ul>
+		<li>避難所データ、奈良市、<a href="browser:http://creativecommons.org/licenses/by/2.1/jp/">クリエイティブ・コモンズ・ライセンス 表示 2.1</a></li>
+	</ul>
+    </div>
+
+    <div data-role="content">
+        <h3>種別の定義</h3>
+        <ul data-role="listview" data-theme="d">
+            <li data-theme="b">一次避難所</li>
+            <li data-for="hinanjo">避難のための立退きを行った居住者、滞在者その他の者を避難のために必要な間滞在させ、又は自ら居住の場所を確保することが困難な被災した住民その他の被災者を一時的に滞在させるための施設</li>
+            <li data-theme="b">一次避難地</li>
+            <li data-for="hinanchi">地震災害が広域に及ぶ場合の避難場所又は広域避難地への中継地</li>
+            <li data-theme="b">広域避難地</li>
+            <li data-for="koiki">地震災害が広域に及ぶ場合の避難場所</li>
+        </ul>
+    </div>
+
+  </div>
+</body>
+</html>
+

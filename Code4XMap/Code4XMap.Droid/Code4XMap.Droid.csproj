@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{B9A7414A-DC96-47EC-97A6-C85E99510C70}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Code4XMap</RootNamespace>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <AssemblyName>Code4XMap</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Export" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="System.Data" />
+    <Reference Include="ICSharpCode.SharpZipLib.Portable, Version=0.86.0.51803, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\SharpZipLib.Portable.0.86.0.0003\lib\portable-net45+netcore45+wp8+win8+wpa81+MonoTouch+MonoAndroid+Xamarin.iOS10\ICSharpCode.SharpZipLib.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="PerpetualEngine.SimpleStorage.Droid, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\SimpleStorage.1.4.1\lib\MonoAndroid\PerpetualEngine.SimpleStorage.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="AndHUD">
+      <HintPath>..\..\packages\AndHUD.1.2.0\lib\MonoAndroid\AndHUD.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeyApp.Android">
+      <HintPath>..\..\Components\hockeyappandroid-3.7.1.0\lib\android\HockeyApp.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Basement">
+      <HintPath>..\..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\lib\MonoAndroid41\Xamarin.GooglePlayServices.Basement.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Base">
+      <HintPath>..\..\packages\Xamarin.GooglePlayServices.Base.29.0.0.2\lib\MonoAndroid41\Xamarin.GooglePlayServices.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Maps">
+      <HintPath>..\..\packages\Xamarin.GooglePlayServices.Maps.29.0.0.2\lib\MonoAndroid41\Xamarin.GooglePlayServices.Maps.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\..\packages\sqlite-net-pcl.1.1.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.MediaRouter">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v7.MediaRouter.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v4.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v7.RecyclerView.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Design">
+      <HintPath>..\..\packages\Xamarin.Android.Support.Design.23.4.0.1\lib\MonoAndroid43\Xamarin.Android.Support.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Vector.Drawable">
+      <HintPath>..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v7.AppCompat.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable">
+      <HintPath>..\..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLPlugin_esqlite3">
+      <HintPath>..\..\packages\SQLitePCL.plugin.sqlite3.android.0.9.3\lib\MonoAndroid\SQLitePCLPlugin_esqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCL.raw">
+      <HintPath>..\..\packages\SQLitePCL.raw.0.9.3\lib\MonoAndroid\SQLitePCL.raw.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCL.batteries">
+      <HintPath>..\..\packages\SQLitePCL.bundle_green.0.9.3\lib\MonoAndroid\SQLitePCL.batteries.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="src\View\CXWebView.cs" />
+    <Compile Include="src\CxAppInitializer.cs" />
+    <Compile Include="src\View\CXMobileUtility.cs" />
+    <Compile Include="src\Page\CXSplashPage.cs" />
+    <Compile Include="src\Fragment\CXWebFragment.cs" />
+    <Compile Include="src\CXApplication.cs" />
+    <Compile Include="src\Fragment\CXListFragment.cs" />
+    <Compile Include="src\Fragment\CXToggleListFragment.cs" />
+    <Compile Include="src\Fragment\CXItemListFragment.cs" />
+    <Compile Include="src\Fragment\CXMapFragment.cs" />
+    <Compile Include="src\CXWebTilesProvider.cs" />
+    <Compile Include="src\CXWebController_And.cs" />
+    <Compile Include="src\CXStorageManager_And.cs" />
+    <Compile Include="src\CXMemoryManager_And.cs" />
+    <Compile Include="src\Page\CXMainPage.cs" />
+    <Compile Include="src\Fragment\CXTabFragment.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Resources\anim\act_close_enter_anim.xml" />
+    <None Include="Resources\anim\act_close_exit_anim.xml" />
+    <None Include="Resources\anim\act_open_enter_anim.xml" />
+    <None Include="Resources\anim\act_open_exit_anim.xml" />
+    <None Include="Resources\values\themes.xml" />
+  </ItemGroup>
+  <Import Project="..\Code4XMap.Shared\Code4XMap.Shared.projitems" Label="Shared" Condition="Exists('..\Code4XMap.Shared\Code4XMap.Shared.projitems')" />
+  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable\info.xml" />
+    <AndroidResource Include="..\resources\icons\hdpi.png">
+      <Link>Resources\drawable-hdpi\Icon.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\hdpi\defaultpin_hdpi.png">
+      <Link>Resources\drawable-hdpi\marker1.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\hdpi\defaultpinyellow_hdpi.png">
+      <Link>Resources\drawable-hdpi\marker10.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\hdpi\defaultpinbrown_hdpi.png">
+      <Link>Resources\drawable-hdpi\marker2.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\hdpi\defaultpingray_hdpi.png">
+      <Link>Resources\drawable-hdpi\marker3.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\hdpi\defaultpingreen_hdpi.png">
+      <Link>Resources\drawable-hdpi\marker4.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\hdpi\defaultpinlightblue_hdpi.png">
+      <Link>Resources\drawable-hdpi\marker5.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\hdpi\defaultpinorange_hdpi.png">
+      <Link>Resources\drawable-hdpi\marker6.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\hdpi\defaultpinpink_hdpi.png">
+      <Link>Resources\drawable-hdpi\marker7.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\hdpi\defaultpinpurple_hdpi.png">
+      <Link>Resources\drawable-hdpi\marker8.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\hdpi\defaultpinred_hdpi.png">
+      <Link>Resources\drawable-hdpi\marker9.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\splashes\480x720px.png">
+      <Link>Resources\drawable-hdpi\splash.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\icons\mdpi.png">
+      <Link>Resources\drawable-mdpi\Icon.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\mdpi\defaultpin_mdpi.png">
+      <Link>Resources\drawable-mdpi\marker1.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\mdpi\defaultpinyellow_mdpi.png">
+      <Link>Resources\drawable-mdpi\marker10.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\mdpi\defaultpinbrown_mdpi.png">
+      <Link>Resources\drawable-mdpi\marker2.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\mdpi\defaultpingray_mdpi.png">
+      <Link>Resources\drawable-mdpi\marker3.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\mdpi\defaultpingreen_mdpi.png">
+      <Link>Resources\drawable-mdpi\marker4.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\mdpi\defaultpinlightblue_mdpi.png">
+      <Link>Resources\drawable-mdpi\marker5.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\mdpi\defaultpinorange_mdpi.png">
+      <Link>Resources\drawable-mdpi\marker6.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\mdpi\defaultpinpink_mdpi.png">
+      <Link>Resources\drawable-mdpi\marker7.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\mdpi\defaultpinpurple_mdpi.png">
+      <Link>Resources\drawable-mdpi\marker8.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\mdpi\defaultpinred_mdpi.png">
+      <Link>Resources\drawable-mdpi\marker9.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\splashes\320x480px.png">
+      <Link>Resources\drawable-mdpi\splash.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\icons\xhdpi.png">
+      <Link>Resources\drawable-xhdpi\Icon.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xhdpi\defaultpin_xhdpi.png">
+      <Link>Resources\drawable-xhdpi\marker1.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xhdpi\defaultpinyellow_xhdpi.png">
+      <Link>Resources\drawable-xhdpi\marker10.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xhdpi\defaultpinbrown_xhdpi.png">
+      <Link>Resources\drawable-xhdpi\marker2.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xhdpi\defaultpingray_xhdpi.png">
+      <Link>Resources\drawable-xhdpi\marker3.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xhdpi\defaultpingreen_xhdpi.png">
+      <Link>Resources\drawable-xhdpi\marker4.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xhdpi\defaultpinlightblue_xhdpi.png">
+      <Link>Resources\drawable-xhdpi\marker5.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xhdpi\defaultpinorange_xhdpi.png">
+      <Link>Resources\drawable-xhdpi\marker6.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xhdpi\defaultpinpink_xhdpi.png">
+      <Link>Resources\drawable-xhdpi\marker7.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xhdpi\defaultpinpurple_xhdpi.png">
+      <Link>Resources\drawable-xhdpi\marker8.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xhdpi\defaultpinred_xhdpi.png">
+      <Link>Resources\drawable-xhdpi\marker9.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\splashes\640x960px.png">
+      <Link>Resources\drawable-xhdpi\splash.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\icons\xxhdpi.png">
+      <Link>Resources\drawable-xxhdpi\Icon.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xxhdpi\defaultpin_xxhdpi.png">
+      <Link>Resources\drawable-xxhdpi\marker1.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xxhdpi\defaultpinyellow_xxhdpi.png">
+      <Link>Resources\drawable-xxhdpi\marker10.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xxhdpi\defaultpinbrown_xxhdpi.png">
+      <Link>Resources\drawable-xxhdpi\marker2.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xxhdpi\defaultpingray_xxhdpi.png">
+      <Link>Resources\drawable-xxhdpi\marker3.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xxhdpi\defaultpingreen_xxhdpi.png">
+      <Link>Resources\drawable-xxhdpi\marker4.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xxhdpi\defaultpinlightblue_xxhdpi.png">
+      <Link>Resources\drawable-xxhdpi\marker5.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xxhdpi\defaultpinorange_xxhdpi.png">
+      <Link>Resources\drawable-xxhdpi\marker6.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xxhdpi\defaultpinpink_xxhdpi.png">
+      <Link>Resources\drawable-xxhdpi\marker7.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xxhdpi\defaultpinpurple_xxhdpi.png">
+      <Link>Resources\drawable-xxhdpi\marker8.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\xxhdpi\defaultpinred_xxhdpi.png">
+      <Link>Resources\drawable-xxhdpi\marker9.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\splashes\960x1440px.png">
+      <Link>Resources\drawable-xxhdpi\splash.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\IconSelectList.axml" />
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\layout\SimpleSelectList.axml" />
+    <AndroidResource Include="Resources\layout\WebView.axml" />
+    <AndroidResource Include="Resources\layout\ListView.axml" />
+    <AndroidResource Include="Resources\layout\MainContainer.axml" />
+    <AndroidResource Include="Resources\layout\MapFragment.axml" />
+    <AndroidResource Include="Resources\layout\SimpleListHeader.axml" />
+    <AndroidResource Include="Resources\layout\SimpleTwoLineList.axml" />
+    <AndroidResource Include="Resources\layout\SplashLayout.axml" />
+    <AndroidResource Include="Resources\layout\TabItem.axml" />
+    <AndroidResource Include="Resources\layout\TabView.axml" />
+    <AndroidResource Include="Resources\values\Bools.xml" />
+    <AndroidResource Include="Resources\values-sw20dp\Bools.xml" />
+    <AndroidResource Include="Resources\drawable\list_item.xml" />
+    <AndroidResource Include="Resources\drawable\list_item_selected.xml" />
+    <AndroidResource Include="Resources\drawable\list_text1.xml" />
+    <AndroidResource Include="Resources\drawable\list_text1_selected.xml" />
+    <AndroidResource Include="Resources\drawable\list_text2.xml" />
+    <AndroidResource Include="Resources\drawable\list_text2_selected.xml" />
+    <AndroidResource Include="Resources\drawable\splash_background.xml" />
+    <AndroidResource Include="Resources\drawable\tab_item.xml" />
+    <AndroidResource Include="Resources\drawable\tab_text.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="..\resources\uis\cyberjapan.png">
+      <Link>Resources\drawable\cyberjapan.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\empty.png">
+      <Link>Resources\drawable\empty.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\hdpi\tab_list_selected.png">
+      <Link>Resources\drawable-hdpi\tab_list_selected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\hdpi\tab_list_unselected.png">
+      <Link>Resources\drawable-hdpi\tab_list_unselected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\hdpi\tab_map_selected.png">
+      <Link>Resources\drawable-hdpi\tab_map_selected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\hdpi\tab_map_unselected.png">
+      <Link>Resources\drawable-hdpi\tab_map_unselected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\hdpi\check_empty.png">
+      <Link>Resources\drawable-hdpi\check_empty.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\hdpi\check.png">
+      <Link>Resources\drawable-hdpi\check.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\hdpi\info_selected.png">
+      <Link>Resources\drawable-hdpi\info_selected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\hdpi\info_unselected.png">
+      <Link>Resources\drawable-hdpi\info_unselected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\hdpi\tab_display_selected.png">
+      <Link>Resources\drawable-hdpi\tab_display_selected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\hdpi\tab_display_unselected.png">
+      <Link>Resources\drawable-hdpi\tab_display_unselected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\mdpi\tab_list_selected.png">
+      <Link>Resources\drawable-mdpi\tab_list_selected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\mdpi\tab_list_unselected.png">
+      <Link>Resources\drawable-mdpi\tab_list_unselected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\mdpi\tab_map_selected.png">
+      <Link>Resources\drawable-mdpi\tab_map_selected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\mdpi\tab_map_unselected.png">
+      <Link>Resources\drawable-mdpi\tab_map_unselected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\mdpi\check_empty.png">
+      <Link>Resources\drawable-mdpi\check_empty.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\mdpi\check.png">
+      <Link>Resources\drawable-mdpi\check.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\mdpi\info_selected.png">
+      <Link>Resources\drawable-mdpi\info_selected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\mdpi\info_unselected.png">
+      <Link>Resources\drawable-mdpi\info_unselected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\mdpi\tab_display_selected.png">
+      <Link>Resources\drawable-mdpi\tab_display_selected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\mdpi\tab_display_unselected.png">
+      <Link>Resources\drawable-mdpi\tab_display_unselected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xxhdpi\tab_list_selected.png">
+      <Link>Resources\drawable-xxhdpi\tab_list_selected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xxhdpi\tab_list_unselected.png">
+      <Link>Resources\drawable-xxhdpi\tab_list_unselected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xxhdpi\tab_map_selected.png">
+      <Link>Resources\drawable-xxhdpi\tab_map_selected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xxhdpi\tab_map_unselected.png">
+      <Link>Resources\drawable-xxhdpi\tab_map_unselected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xxhdpi\check_empty.png">
+      <Link>Resources\drawable-xxhdpi\check_empty.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xxhdpi\check.png">
+      <Link>Resources\drawable-xxhdpi\check.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xxhdpi\info_selected.png">
+      <Link>Resources\drawable-xxhdpi\info_selected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xxhdpi\info_unselected.png">
+      <Link>Resources\drawable-xxhdpi\info_unselected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xxhdpi\tab_display_selected.png">
+      <Link>Resources\drawable-xxhdpi\tab_display_selected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xxhdpi\tab_display_unselected.png">
+      <Link>Resources\drawable-xxhdpi\tab_display_unselected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xhdpi\check_empty.png">
+      <Link>Resources\drawable-xhdpi\check_empty.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xhdpi\check.png">
+      <Link>Resources\drawable-xhdpi\check.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xhdpi\info_selected.png">
+      <Link>Resources\drawable-xhdpi\info_selected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xhdpi\info_unselected.png">
+      <Link>Resources\drawable-xhdpi\info_unselected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xhdpi\tab_display_selected.png">
+      <Link>Resources\drawable-xhdpi\tab_display_selected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xhdpi\tab_display_unselected.png">
+      <Link>Resources\drawable-xhdpi\tab_display_unselected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xhdpi\tab_list_selected.png">
+      <Link>Resources\drawable-xhdpi\tab_list_selected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xhdpi\tab_list_unselected.png">
+      <Link>Resources\drawable-xhdpi\tab_list_unselected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xhdpi\tab_map_selected.png">
+      <Link>Resources\drawable-xhdpi\tab_map_selected.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\uis\xhdpi\tab_map_unselected.png">
+      <Link>Resources\drawable-xhdpi\tab_map_unselected.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets" Condition="Exists('..\..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets')" />
+  <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
+  <ItemGroup>
+    <Folder Include="src\Page\" />
+    <Folder Include="src\Fragment\" />
+    <Folder Include="Resources\values-sw20dp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="hockeyappandroid">
+      <Version>3.7.1.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>

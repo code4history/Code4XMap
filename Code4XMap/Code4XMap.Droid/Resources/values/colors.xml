@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+<color name="white">#ffffff</color>
+<color name="deepskyblue">#00bfff</color>
+<color name="black">#000000</color>
+<color name="silver">#c0c0c0</color>
+<color name="bar_unselected">#e4d5b9</color>
+<color name="bar_selected">#dbcdb8</color>
+<color name="splash_bgcolor">#fdd558</color>
+</resources>

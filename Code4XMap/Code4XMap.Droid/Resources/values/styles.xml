@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="Theme.Splash" parent="android:Theme">
+    <item name="android:windowNoTitle">true</item>
+  </style>
+  
+  <style name="Theme.main_theme" parent="android:Theme.Holo.Light">
+    <item name="android:actionMenuTextColor">@color/black</item>
+    <item name="android:actionBarStyle">@style/main_actionbar_style</item>
+  </style>
+ 
+  <style name="main_actionbar_style" parent="@android:style/Widget.Holo.Light.ActionBar">
+    <item name="android:background">@color/bar_unselected</item>
+  </style>
+</resources>

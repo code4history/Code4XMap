@@ -1,0 +1,10 @@
+Components/
+AtCreationMap/bin
+AtCreationMap/obj
+packages
+.DS_Store
+*.apk
+bin
+obj
+apikey.xml
+apikey.plist

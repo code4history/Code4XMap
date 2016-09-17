@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\Xamarin.Build.Download.0.2.2\build\Xamarin.Build.Download.props" Condition="Exists('..\..\packages\Xamarin.Build.Download.0.2.2\build\Xamarin.Build.Download.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{DF84504F-4FFD-431A-9D9E-BABF5C15D156}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Code4XMap</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <TargetFrameworkIdentifier>Xamarin.iOS</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
+    <AssemblyName>Code4XMap</AssemblyName>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchSdkVersion>7.0</MtouchSdkVersion>
+    <MtouchExtraArgs>-cxx</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>i386</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchDebug>true</MtouchDebug>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer: Kohei Otsuka (RXKEYNVW36)</CodesignKey>
+    <MtouchSdkVersion>7.0</MtouchSdkVersion>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7, ARMv7s</MtouchArch>
+    <BuildIpa>true</BuildIpa>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <ConsolePause>false</ConsolePause>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7, ARMv7s, ARM64</MtouchArch>
+    <MtouchSdkVersion>7.0</MtouchSdkVersion>
+    <BuildIpa>true</BuildIpa>
+    <IpaPackageName>RarePasta</IpaPackageName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <BuildIpa>true</BuildIpa>
+    <ConsolePause>false</ConsolePause>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7, ARMv7s, ARM64</MtouchArch>
+    <MtouchSdkVersion>7.0</MtouchSdkVersion>
+    <IpaPackageName>RarePasta</IpaPackageName>
+    <IpaMetadata>Info.plist</IpaMetadata>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <ConsolePause>false</ConsolePause>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="OpenTK-1.0" />
+    <Reference Include="PerpetualEngine.SimpleStorage.iOS-Unified, Version=1.0.5780.20166, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\SimpleStorage.1.4.1\lib\Xamarin.iOS10\PerpetualEngine.SimpleStorage.iOS-Unified.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Json" />
+    <Reference Include="HockeyApp.iOS">
+      <HintPath>..\..\Components\hockeyappios-3.8.6.0\lib\ios-unified\HockeyApp.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="BTProgressHUD">
+      <HintPath>..\..\packages\BTProgressHUD.1.2.0.3\lib\Xamarin.iOS10\BTProgressHUD.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\..\packages\sqlite-net-pcl.1.1.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCL.raw">
+      <HintPath>..\..\packages\SQLitePCL.raw.0.9.3\lib\Xamarin.iOS10\SQLitePCL.raw.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCL.batteries">
+      <HintPath>..\..\packages\SQLitePCL.bundle_green.0.9.3\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCL.batteries.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Maps">
+      <HintPath>..\..\packages\Xamarin.Google.iOS.Maps.1.13.2.2\lib\Xamarin.iOS10\Google.Maps.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="..\Code4XMap.Shared\Code4XMap.Shared.projitems" Label="Shared" Condition="Exists('..\Code4XMap.Shared\Code4XMap.Shared.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <BundleResource Include="Resources\button_navigation_left.png" />
+    <BundleResource Include="Resources\button_navigation_left%402x.png" />
+    <BundleResource Include="Resources\button_navigation_right.png" />
+    <BundleResource Include="Resources\button_navigation_right%402x.png" />
+    <BundleResource Include="..\resources\uis\cyberjapan.png">
+      <Link>Resources\cyberjapan.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\empty.png">
+      <Link>Resources\empty.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\xhdpi\check.png">
+      <Link>Resources\check%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\xhdpi\check_empty.png">
+      <Link>Resources\check_empty%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\xhdpi\info_selected.png">
+      <Link>Resources\info_selected%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\xhdpi\info_unselected.png">
+      <Link>Resources\info_unselected%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\xhdpi\tab_display_selected.png">
+      <Link>Resources\tab_display_selected%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\xhdpi\tab_display_unselected.png">
+      <Link>Resources\tab_display_unselected%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\xhdpi\tab_list_selected.png">
+      <Link>Resources\tab_list_selected%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\xhdpi\tab_list_unselected.png">
+      <Link>Resources\tab_list_unselected%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\xhdpi\tab_map_selected.png">
+      <Link>Resources\tab_map_selected%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\xhdpi\tab_map_unselected.png">
+      <Link>Resources\tab_map_unselected%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\mdpi\tab_list_selected.png">
+      <Link>Resources\tab_list_selected.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\mdpi\tab_list_unselected.png">
+      <Link>Resources\tab_list_unselected.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\mdpi\tab_map_selected.png">
+      <Link>Resources\tab_map_selected.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\mdpi\tab_map_unselected.png">
+      <Link>Resources\tab_map_unselected.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\mdpi\check_empty.png">
+      <Link>Resources\check_empty.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\mdpi\check.png">
+      <Link>Resources\check.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\mdpi\info_selected.png">
+      <Link>Resources\info_selected.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\mdpi\info_unselected.png">
+      <Link>Resources\info_unselected.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\mdpi\tab_display_selected.png">
+      <Link>Resources\tab_display_selected.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\resources\uis\mdpi\tab_display_unselected.png">
+      <Link>Resources\tab_display_unselected.png</Link>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="src\View\CXWebView.cs" />
+    <Compile Include="src\View\CXMobileUtility.cs" />
+    <Compile Include="src\Page\CXSplashPage.cs" />
+    <Compile Include="src\Fragment\CXWebFragment.cs" />
+    <Compile Include="src\Fragment\CXListFragment.cs" />
+    <Compile Include="src\Fragment\CXItemListFragment.cs" />
+    <Compile Include="src\Fragment\CXToggleListFragment.cs" />
+    <Compile Include="src\CXWebTilesProvider.cs" />
+    <Compile Include="src\Fragment\CXMapFragment.cs" />
+    <Compile Include="src\CXWebController_iOS.cs" />
+    <Compile Include="src\CXStorageManager_iOS.cs" />
+    <Compile Include="src\CXMemoryManager_iOS.cs" />
+    <Compile Include="src\Fragment\CXTabFragment.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\resources\splashes\320x480px.png">
+      <Link>Resources\Default.png</Link>
+    </None>
+    <None Include="..\resources\splashes\640x960px.png">
+      <Link>Resources\Default%402x.png</Link>
+    </None>
+    <None Include="..\resources\splashes\640x1136px.png">
+      <Link>Resources\Default-568h%402x.png</Link>
+    </None>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\tabbar.png" />
+    <None Include="Resources\tabbar%402x.png" />
+    <None Include="..\resources\pins\mdpi\defaultpinbrown_mdpi.png">
+      <Link>Resources\marker2.png</Link>
+    </None>
+    <None Include="..\resources\pins\mdpi\defaultpingray_mdpi.png">
+      <Link>Resources\marker3.png</Link>
+    </None>
+    <None Include="..\resources\pins\mdpi\defaultpingreen_mdpi.png">
+      <Link>Resources\marker4.png</Link>
+    </None>
+    <None Include="..\resources\pins\mdpi\defaultpinlightblue_mdpi.png">
+      <Link>Resources\marker5.png</Link>
+    </None>
+    <None Include="..\resources\pins\mdpi\defaultpinorange_mdpi.png">
+      <Link>Resources\marker6.png</Link>
+    </None>
+    <None Include="..\resources\pins\mdpi\defaultpinpink_mdpi.png">
+      <Link>Resources\marker7.png</Link>
+    </None>
+    <None Include="..\resources\pins\mdpi\defaultpinyellow_mdpi.png">
+      <Link>Resources\marker10.png</Link>
+    </None>
+    <None Include="..\resources\pins\mdpi\defaultpinpurple_mdpi.png">
+      <Link>Resources\marker8.png</Link>
+    </None>
+    <None Include="..\resources\pins\mdpi\defaultpinred_mdpi.png">
+      <Link>Resources\marker9.png</Link>
+    </None>
+    <None Include="..\resources\pins\mdpi\defaultpin_mdpi.png">
+      <Link>Resources\marker1.png</Link>
+    </None>
+    <None Include="..\resources\pins\xhdpi\defaultpinbrown_xhdpi.png">
+      <Link>Resources\marker2%402x.png</Link>
+    </None>
+    <None Include="..\resources\pins\xhdpi\defaultpingray_xhdpi.png">
+      <Link>Resources\marker3%402x.png</Link>
+    </None>
+    <None Include="..\resources\pins\xhdpi\defaultpingreen_xhdpi.png">
+      <Link>Resources\marker4%402x.png</Link>
+    </None>
+    <None Include="..\resources\pins\xhdpi\defaultpinlightblue_xhdpi.png">
+      <Link>Resources\marker5%402x.png</Link>
+    </None>
+    <None Include="..\resources\pins\xhdpi\defaultpinorange_xhdpi.png">
+      <Link>Resources\marker6%402x.png</Link>
+    </None>
+    <None Include="..\resources\pins\xhdpi\defaultpinpink_xhdpi.png">
+      <Link>Resources\marker7%402x.png</Link>
+    </None>
+    <None Include="..\resources\pins\xhdpi\defaultpinyellow_xhdpi.png">
+      <Link>Resources\marker10%402x.png</Link>
+    </None>
+    <None Include="..\resources\pins\xhdpi\defaultpinpurple_xhdpi.png">
+      <Link>Resources\marker8%402x.png</Link>
+    </None>
+    <None Include="..\resources\pins\xhdpi\defaultpinred_xhdpi.png">
+      <Link>Resources\marker9%402x.png</Link>
+    </None>
+    <None Include="..\resources\pins\xhdpi\defaultpin_xhdpi.png">
+      <Link>Resources\marker1%402x.png</Link>
+    </None>
+    <None Include="Resources\navigationbar.png" />
+    <None Include="Resources\navigationbar%402x.png" />
+    <None Include="..\resources\icons\iPhone3.png">
+      <Link>Resources\Icon.png</Link>
+    </None>
+    <None Include="..\resources\icons\Retina.png">
+      <Link>Resources\Icon%402x.png</Link>
+    </None>
+    <None Include="..\resources\icons\iPhone3_mini.png">
+      <Link>Resources\Icon-Small.png</Link>
+    </None>
+    <None Include="..\resources\icons\Retina_mini.png">
+      <Link>Resources\Icon-Small%402x.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\Page\" />
+    <Folder Include="src\Fragment\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="hockeyappios">
+      <Version>3.8.6.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <Import Project="..\..\packages\Xamarin.Build.Download.0.2.2\build\Xamarin.Build.Download.targets" Condition="Exists('..\..\packages\Xamarin.Build.Download.0.2.2\build\Xamarin.Build.Download.targets')" />
+  <Import Project="..\..\packages\Xamarin.Google.iOS.Maps.1.13.2.2\build\Xamarin.Google.iOS.Maps.targets" Condition="Exists('..\..\packages\Xamarin.Google.iOS.Maps.1.13.2.2\build\Xamarin.Google.iOS.Maps.targets')" />
+</Project>

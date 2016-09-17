@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{B2184057-0A4F-4A34-B90E-C79E84D8EDC6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NaraHinan</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>NaraHinan</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <Debugger>Xamarin</Debugger>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Export" />
+    <Reference Include="AndHUD, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\AndHUD.1.2.0\lib\MonoAndroid\AndHUD.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Basement">
+      <HintPath>..\..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\lib\MonoAndroid41\Xamarin.GooglePlayServices.Basement.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Base">
+      <HintPath>..\..\packages\Xamarin.GooglePlayServices.Base.29.0.0.2\lib\MonoAndroid41\Xamarin.GooglePlayServices.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Maps">
+      <HintPath>..\..\packages\Xamarin.GooglePlayServices.Maps.29.0.0.2\lib\MonoAndroid41\Xamarin.GooglePlayServices.Maps.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.MediaRouter">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v7.MediaRouter.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v4.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v7.RecyclerView.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Design">
+      <HintPath>..\..\packages\Xamarin.Android.Support.Design.23.4.0.1\lib\MonoAndroid43\Xamarin.Android.Support.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Vector.Drawable">
+      <HintPath>..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v7.AppCompat.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable">
+      <HintPath>..\..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="PerpetualEngine.SimpleStorage.Droid">
+      <HintPath>..\..\packages\SimpleStorage.1.4.1\lib\MonoAndroid\PerpetualEngine.SimpleStorage.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLPlugin_esqlite3">
+      <HintPath>..\..\packages\SQLitePCL.plugin.sqlite3.android.0.9.2\lib\MonoAndroid\SQLitePCLPlugin_esqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCL.raw">
+      <HintPath>..\..\packages\SQLitePCL.raw.0.9.2\lib\MonoAndroid\SQLitePCL.raw.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCL.batteries">
+      <HintPath>..\..\packages\SQLitePCL.bundle_green.0.9.2\lib\MonoAndroid\SQLitePCL.batteries.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\..\packages\sqlite-net-pcl.1.1.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeyApp.Android">
+      <HintPath>..\..\Components\hockeyappandroid-3.7.1.0\lib\android\HockeyApp.Android.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="..\resources\pins\first_hdpi.png">
+      <Link>Resources\drawable-hdpi\first.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\space_hdpi.png">
+      <Link>Resources\drawable-hdpi\space.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\wide_hdpi.png">
+      <Link>Resources\drawable-hdpi\wide.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\first_mdpi.png">
+      <Link>Resources\drawable-mdpi\first.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\space_mdpi.png">
+      <Link>Resources\drawable-mdpi\space.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\wide_mdpi.png">
+      <Link>Resources\drawable-mdpi\wide.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\first_xhdpi.png">
+      <Link>Resources\drawable-xhdpi\first.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\space_xhdpi.png">
+      <Link>Resources\drawable-xhdpi\space.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\wide_xhdpi.png">
+      <Link>Resources\drawable-xhdpi\wide.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\first_xxhdpi.png">
+      <Link>Resources\drawable-xxhdpi\first.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\space_xxhdpi.png">
+      <Link>Resources\drawable-xxhdpi\space.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\pins\wide_xxhdpi.png">
+      <Link>Resources\drawable-xxhdpi\wide.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\splashes\480-x-720-px_moji.png">
+      <Link>Resources\drawable-hdpi\splash.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\icons\hdpi.png">
+      <Link>Resources\drawable-hdpi\Icon.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\splashes\320-x-480-px_moji.png">
+      <Link>Resources\drawable-mdpi\splash.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\icons\mdpi.png">
+      <Link>Resources\drawable-mdpi\Icon.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\splashes\640-x-960-px_moji.png">
+      <Link>Resources\drawable-xhdpi\splash.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\icons\xhdpi.png">
+      <Link>Resources\drawable-xhdpi\Icon.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\icons\xxhdpi.png">
+      <Link>Resources\drawable-xxhdpi\Icon.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\resources\splashes\960-x-1440-px_moji.png">
+      <Link>Resources\drawable-xxhdpi\splash.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="apikey.xml">
+      <Link>Resources\values\apikey.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Code4XMap\Code4XMap.Droid\Code4XMap.Droid.csproj">
+      <Project>{B9A7414A-DC96-47EC-97A6-C85E99510C70}</Project>
+      <Name>Code4XMap.Droid</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AndroidAsset Include="..\data\manifest.json">
+      <Link>Assets\data\manifest.json</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\data\tilemap.jp\NaraHinan\Model.sqlite">
+      <Link>Assets\data\tilemap.jp\NaraHinan\Model.sqlite</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\data\tilemap.jp\NaraHinan\hanrei.html">
+      <Link>Assets\data\tilemap.jp\NaraHinan\hanrei.html</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\data\tilemap.jp\NaraHinan\hinanjyo.html">
+      <Link>Assets\data\tilemap.jp\NaraHinan\hinanjyo.html</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\data\tilemap.jp\NaraHinan\lib\jquery-1.7.1.min.js">
+      <Link>Assets\data\tilemap.jp\NaraHinan\lib\jquery-1.7.1.min.js</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\data\tilemap.jp\NaraHinan\lib\jquery.mobile-1.1.1.min.css">
+      <Link>Assets\data\tilemap.jp\NaraHinan\lib\jquery.mobile-1.1.1.min.css</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\data\tilemap.jp\NaraHinan\lib\jquery.mobile-1.1.1.min.js">
+      <Link>Assets\data\tilemap.jp\NaraHinan\lib\jquery.mobile-1.1.1.min.js</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\data\tilemap.jp\NaraHinan\lib\images\ajax-loader.gif">
+      <Link>Assets\data\tilemap.jp\NaraHinan\lib\images\ajax-loader.gif</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\data\tilemap.jp\NaraHinan\lib\images\ajax-loader.png">
+      <Link>Assets\data\tilemap.jp\NaraHinan\lib\images\ajax-loader.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\data\tilemap.jp\NaraHinan\lib\images\icons-18-black.png">
+      <Link>Assets\data\tilemap.jp\NaraHinan\lib\images\icons-18-black.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\data\tilemap.jp\NaraHinan\lib\images\icons-18-white.png">
+      <Link>Assets\data\tilemap.jp\NaraHinan\lib\images\icons-18-white.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\data\tilemap.jp\NaraHinan\lib\images\icons-36-black.png">
+      <Link>Assets\data\tilemap.jp\NaraHinan\lib\images\icons-36-black.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\data\tilemap.jp\NaraHinan\lib\images\icons-36-white.png">
+      <Link>Assets\data\tilemap.jp\NaraHinan\lib\images\icons-36-white.png</Link>
+    </AndroidAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="hockeyappandroid">
+      <Version>3.7.1.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets" Condition="Exists('..\..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets')" />
+  <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
+</Project>

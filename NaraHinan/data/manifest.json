@@ -1,0 +1,29 @@
+{
+  "Type": "CXManifest",
+  "Name": "NaraHinan",
+  "Title": "奈良市避難所マップ",
+  "Version": "1.16",
+  "Updated": "2016-05-21T01:46:00",
+  "TargetUrl": "http://tilemap.jp/NaraHinan/",
+  "ModelUrl": "./Model.sqlite",
+  "startPosition": {
+    "Latitude": 34.685333,
+    "Longitude" : 135.832744,
+    "Zoom" : 15.0
+  },
+  "boundsLimit": {
+    "SouthWest": {
+      "Latitude": 34.551006, 
+      "Longitude": 135.710720
+    },
+    "NorthEast" : {
+      "Latitude": 34.760780, 
+      "Longitude": 136.079155
+    },
+    "minZoom" : 5.0,
+    "maxZoom" : 18.0
+  },
+  "Resources": [
+    "./Model.sqlite"
+  ]
+}

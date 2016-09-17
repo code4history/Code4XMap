@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+<color name="bar_unselected">#007b61</color>
+<color name="bar_selected">#256558</color>
+<color name="splash_bgcolor">#FFFFFF</color>
+</resources>
