@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>明治期の低湿地について</title>
+  <link rel="stylesheet" href="lib/jquery.mobile-1.1.1.min.css" />
+        <style>
+            /* App custom styles */
+  /* jQuery Mobileのリスト内の文字を折り返す
+  cssのセレクターでaタグを特定
+  */
+      .ui-header .ui-title {
+        /*margin: .6em 30% .8em;*/
+        margin: .6em 5% .8em;
+      }
+  h1{
+      white-space: normal!important;
+  font-size : 13px!important;
+  }
+        </style>
+  <script src="lib/jquery-1.7.1.min.js"></script>
+  <script src="lib/jquery.mobile-1.1.1.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+  <div data-role="header">
+    <h1>明治期の低湿地について</h1>
+  </div>
+
+    <div data-role="content">
+        <h3>図の作成について</h3>
+        <p>「明治期の低湿地データ」は、明治期に作成された地図から、当時の低湿地の分布を抽出したものです。ここで言う「低湿地」は、河川や湿地、水田・葦の群生地など「土地の液状化」との関連が深いと考えられる区域です。</p>
+    </div>
+
+    <div data-role="content">
+        <h3>注</h3>
+        <p><b>場所によってはかなりの位置誤差を含む場合があります。</b><br>関東地区、近畿地区のデータ作成に使用した原典資料は、位置の基準である三角点が整備される前に作成されたため、「明治期の低湿地データ」の位置は、場所によってはかなりの誤差を含んでいることもありますので注意が必要です。</p>
+    </div>
+
+    <div data-role="content">
+        <h3>原典資料</h3>
+        <ul data-role="listview" data-theme="d">
+           <li data-theme="b">関東地区</li>
+            <li data-for="kanto">第一軍管地方二万分一迅速測図原図(明治 13 年～19 年作成)</li>
+            <li data-theme="b">近畿地区</li>
+            <li data-for="kinki">京阪地方仮製二万分一地形図(明治 17 年～23 年作成)</li>
+            <li data-theme="b">中部地区</li>
+            <li data-for="chubu1">正式二万分一地形図(明治 23 年～44 年作成)</li>
+            <li data-for="chubu2">５万分１地形図(明治 22 年～44 年作成)</li>
+        </ul>
+    </div>
+
+    <div data-role="content">
+        <h3>取得項目詳細</h3>
+        <p>関東地区</p>
+        <ul data-role="listview" data-theme="d">
+           <li data-theme="b">旧河道</li>
+            <li data-for="kado">一般的な定義に基づく「旧河道」を正規原図から判読し取得する。<br>[[一般的な旧河道の定義]]：干上がった河床、一般面よりの比高 0.5m～1.0m 低い帯状の凹地。縁に沿って微少な凸地が認められるような個所。<br><b>注意</b> 通常「旧河道」の判読は、空中写真や地史資料、ボーリングデータ等、複数の資料により判読される。本データでは、他の資料を一切参照しておらず、旧河道の存本データでは、他の資料を一切参照しておらず、旧河道の存否や形状において、その精度は低い。</li>
+           <li data-theme="b">干潟・砂浜</li>
+            <li data-for="higata">海岸線より海側に位置し、主に砂、泥と記された範囲。満潮時には、海面に没する地形を推測し取得する。</li>
+           <li data-theme="b">水田</li>
+            <li data-for="suiden">水田、水と記された範囲。表示されているもの全てを取得する。</li>
+           <li data-theme="b">田</li>
+            <li data-for="ta">田と記された範囲。表示されているもの全てを取得する。</li>
+           <li data-theme="b">茅</li>
+            <li data-for="kaya">茅（かや）、萱（かや）と記された範囲。表示されているもの全てを取得する。</li>
+           <li data-theme="b">ヨシ</li>
+            <li data-for="yoshi">蘆、芦、葦、葮（あし）、湿と記された範囲。表示されているもの全てを取得する。</li>
+           <li data-theme="b">砂礫地</li>
+            <li data-for="suna">砂、沙、礫と記された範囲。表示されているもの全てを取得する。</li>
+           <li data-theme="b">泥</li>
+            <li data-for="doro">泥と記された範囲。表示されているもの全てを取得する。</li>
+           <li data-theme="b">塩田</li>
+            <li data-for="enden">塩田と記された範囲。表示されているもの全てを取得する。</li>
+           <li data-theme="b">湿地</li>
+            <li data-for="shicchi">湿地と記された範囲。表示されているもの全てを取得する。</li>
+           <li data-theme="b">荒地</li>
+            <li data-for="kochi">荒地、曠（こう）と記された範囲。河川湖沼、水田、茅、ヨシに近接するものを取得する。山地や台地上のものは取得しない。</li>
+           <li data-theme="b">草地</li>
+            <li data-for="kusa">草と記された範囲。荒地、曠（こう）と記された範囲。河川湖沼、水田、茅、ヨシに近接するものを取得する。山地や台地上のものは取得しない。</li>
+           <li data-theme="b">河川</li>
+            <li data-for="kawa">河川、用水路と記された範囲。表示されているもの全てを取得する。</li>
+           <li data-theme="b">湖沼</li>
+            <li data-for="kosho">湖沼と記された範囲。表示されているもの全てを取得する。</li>
+           <li data-theme="b">海面</li>
+            <li data-for="umi">海面と判読できる範囲。表示されているもの全てを取得する。</li>
+        </ul>
+        <p>近畿地区</p>
+        <ul data-role="listview" data-theme="d">
+           <li data-theme="b">旧河道</li>
+            <li data-for="kado_k">一般的な定義に基づく「旧河道」を正規原図から判読し取得する。<br>[[一般的な旧河道の定義]]：干上がった河床、一般面よりの比高 0.5m～1.0m 低い帯状の凹地。縁に沿って微少な凸地が認められるような個所。<br><b>注意</b> 通常「旧河道」の判読は、空中写真や地史資料、ボーリングデータ等、複数の資料により判読される。本データでは、他の資料を一切参照しておらず、旧河道の存否や形状において、その精度は低い。</li>
+           <li data-theme="b">干潟・砂浜</li>
+            <li data-for="higata_k">海岸線より海側に位置し、主に砂、泥と記された範囲。満潮時には、海面に没する地形を推測し取得する。</li>
+           <li data-theme="b">深田</li>
+            <li data-for="fukata_k">深田記号の付された範囲</li>
+           <li data-theme="b">水田</li>
+            <li data-for="suiden_k">水田記号の付された範囲</li>
+           <li data-theme="b">陸田</li>
+            <li data-for="okata_k">陸田記号の付された範囲</li>
+           <li data-theme="b">湿地</li>
+            <li data-for="shicchi_k">湿地記号の付された範囲</li>
+           <li data-theme="b">砂礫地</li>
+            <li data-for="sareki_k">砂原、石原、砂礫磧記号の付された範囲。表示されているもの全てを取得する。</li>
+           <li data-theme="b">荒地</li>
+            <li data-for="arechi_k">荒地記号の付された範囲及びそれに類する範囲。山地や台地上のものは取得しない。</li>
+           <li data-theme="b">河川</li>
+            <li data-for="kawa_k">河川、用水路で記された範囲。表示されているもの全てを取得する。</li>
+           <li data-theme="b">湖沼</li>
+            <li data-for="kosho_k">湖沼で表記された範囲。表示されているもの全てを取得する。</li>
+           <li data-theme="b">海面</li>
+            <li data-for="umi_k">海面で表記された範囲。表示されているもの全てを取得する。</li>
+        </ul>
+        <p>中部地区</p>
+        <ul data-role="listview" data-theme="d">
+           <li data-theme="b">河川</li>
+            <li data-for="kasen_c">河川、用水路で記された範囲。表示されているもの全てを取得する。</li>
+           <li data-theme="b">湖沼</li>
+            <li data-for="kosho_c">湖沼で表記された範囲。表示されているもの全てを取得する。</li>
+           <li data-theme="b">海面</li>
+            <li data-for="umi_c">海面で表記された範囲。表示されているもの全てを取得する。</li>
+        </ul>
+    </div>
+
+  <div data-role="footer">
+    <h3>Copyright 2016, 国土地理院</h3>
+  </div>
+
+  </div>
+</body>
+</html>
+

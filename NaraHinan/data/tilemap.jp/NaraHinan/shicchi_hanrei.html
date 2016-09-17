@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>明治期の低湿地の凡例</title>
+  <link rel="stylesheet" href="lib/jquery.mobile-1.1.1.min.css" />
+        <style>
+            /* App custom styles */
+	/* jQuery Mobileのリスト内の文字を折り返す
+	cssのセレクターでaタグを特定
+	*/
+      .ui-header .ui-title {
+        /*margin: .6em 30% .8em;*/
+        margin: .6em 5% .8em;
+      }
+	h1{
+    	white-space: normal!important;
+	font-size : 13px!important;
+	}
+.stripe {
+    width: 27%;
+    min-height: 40px;
+    background-image: -webkit-gradient(linear,0 0,0 100%, color-stop(.3,#2e81ff), color-stop(.7,transparent),to(transparent));
+    -webkit-background-size: 3px;
+    background-color: #fff;
+}
+.center {
+  width: 27%;
+  text-align: center;
+}
+.higata {
+    width: 27%;
+    min-height: 40px;
+    background-color: #c7ddff;
+}
+.fukata {
+    width: 27%;
+    min-height: 40px;
+    background-color: #ffcc00;
+}
+.suiden {
+    width: 27%;
+    min-height: 40px;
+    background-color: #faf16d;
+}
+.shicchi {
+    width: 27%;
+    min-height: 40px;
+    background-color: #9999cc;
+}
+.sareki {
+    width: 27%;
+    min-height: 40px;
+    background-color: #ffcc99;
+}
+.deichi {
+    width: 27%;
+    min-height: 40px;
+    background-color: #ff9999;
+}
+.enden {
+    width: 27%;
+    min-height: 40px;
+    background-color: #cccc99;
+}
+.arechi {
+    width: 27%;
+    min-height: 40px;
+    background-color: #669933;
+}
+.umi {
+    width: 27%;
+    min-height: 40px;
+    background-color: #3399ff;
+}
+.deitan {
+    width: 27%;
+    min-height: 40px;
+    background-color: #cc6600;
+}
+.yoshi {
+    width: 27%;
+    min-height: 40px;
+    background-color: #00cc99;
+}
+.kaya {
+    width: 27%;
+    min-height: 40px;
+    background-color: #66ff66;
+}
+.kusaba {
+    width: 27%;
+    min-height: 40px;
+    background-color: #99ff99;
+}
+.teibo {
+    width: 27%;
+    min-height: 40px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAAAeCAYAAABzL3NnAAAA60lEQVRYR2P8////f4YRDhhHA4GBYTQQGEYDAVwQjKaE0UCA1AijKWE0EEZTArx1NJodRrMDjuywrdaP4evb5zRrSPu0bWPgFBDFaf6WSk+G7x/f0Mx+v+49DOzc/CjmY2SHpfFqDF9ePaKZI2KW3GPgFpbCaf6iSDmG7x9e0cz++JVPGTj4hEcDYTQQRlMCA8NodmAYDQRwYTiaEogNhPePbjD8+/OLZlWUoLwWAxMzC07z3z+8zvDv728a2q/NwMTMjL+KpJntg9jg0b7DaN9htCs92pVGLqJGy4TRMmG0TBgtE0bLBLSGGwA16eOnOxOpgwAAAABJRU5ErkJggg==);
+    background-color: #fff;
+}
+
+
+
+
+        </style>
+  <script src="lib/jquery-1.7.1.min.js"></script>
+  <script src="lib/jquery.mobile-1.1.1.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+  <div data-role="header">
+    <h1>明治期の低湿地の凡例</h1>
+  </div>
+  <div role="main" class="ui-content">
+    <table id="tbl" data-role="table" data-mode="reflow" class="ui-responsive">
+      <thead>
+        <tr>
+          <th> </th>
+          <th>関東地区</th>
+          <th>近畿地区</th>
+          <th>中部地区</th>
+        </tr>
+      </thead>
+      <tbody>
+         <tr>
+          <td>旧河道</td>
+          <td class="stripe"></td>
+          <td class="stripe"></td>
+          <td class="center">ー</td>
+         </tr>
+         <tr>
+          <td>干潟・砂浜</td>
+          <td class="higata"></td>
+          <td class="higata"></td>
+          <td class="center">ー</td>
+         </tr>
+         <tr>
+          <td>深田</td>
+          <td class="center">ー</td>
+          <td class="fukata"></td>
+          <td class="center">ー</td>
+         </tr>
+         <tr>
+          <td>水田、田</td>
+          <td class="suiden"></td>
+          <td class="suiden"></td>
+          <td class="center">ー</td>
+         </tr>
+         <tr>
+          <td>湿地</td>
+          <td class="shicchi"></td>
+          <td class="shicchi"></td>
+          <td class="center">ー</td>
+         </tr>
+         <tr>
+          <td>砂礫地</td>
+          <td class="sareki"></td>
+          <td class="sareki"></td>
+          <td class="center">ー</td>
+         </tr>
+         <tr>
+          <td>泥地</td>
+          <td class="deichi"></td>
+          <td class="deichi"></td>
+          <td class="center">ー</td>
+         </tr>
+         <tr>
+          <td>塩田</td>
+          <td class="enden"></td>
+          <td class="enden"></td>
+          <td class="center">ー</td>
+         </tr>
+         <tr>
+          <td>荒地</td>
+          <td class="arechi"></td>
+          <td class="arechi"></td>
+          <td class="center">ー</td>
+         </tr>
+         <tr>
+          <td>川、湖、沼、海</td>
+          <td class="umi"></td>
+          <td class="umi"></td>
+          <td class="umi"></td>
+         </tr>
+         <tr>
+          <td>泥炭地</td>
+          <td class="deitan"></td>
+          <td class="center">ー</td>
+          <td class="center">ー</td>
+         </tr>
+         <tr>
+          <td>ヨシ</td>
+          <td class="yoshi"></td>
+          <td class="center">ー</td>
+          <td class="center">ー</td>
+         </tr>
+         <tr>
+          <td>茅</td>
+          <td class="kaya"></td>
+          <td class="center">ー</td>
+          <td class="center">ー</td>
+         </tr>
+         <tr>
+          <td>草場</td>
+          <td class="kusaba"></td>
+          <td class="center">ー</td>
+          <td class="center">ー</td>
+         </tr>
+         <tr>
+          <td>堤防</td>
+          <td class="teibo"></td>
+          <td class="teibo"></td>
+          <td class="center">ー</td>
+         </tr>
+      </tbody>
+    </table>
+  </div>
+  <div data-role="footer">
+    <h3>Copyright 2016, 国土地理院</h3>
+  </div>
+</div>
+</body>
+</html>
+

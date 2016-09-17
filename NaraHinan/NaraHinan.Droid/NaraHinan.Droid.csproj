@@ -87,20 +87,20 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="SQLitePCLPlugin_esqlite3">
-      <HintPath>..\..\packages\SQLitePCL.plugin.sqlite3.android.0.9.2\lib\MonoAndroid\SQLitePCLPlugin_esqlite3.dll</HintPath>
-    </Reference>
-    <Reference Include="SQLitePCL.raw">
-      <HintPath>..\..\packages\SQLitePCL.raw.0.9.2\lib\MonoAndroid\SQLitePCL.raw.dll</HintPath>
-    </Reference>
-    <Reference Include="SQLitePCL.batteries">
-      <HintPath>..\..\packages\SQLitePCL.bundle_green.0.9.2\lib\MonoAndroid\SQLitePCL.batteries.dll</HintPath>
-    </Reference>
     <Reference Include="SQLite-net">
       <HintPath>..\..\packages\sqlite-net-pcl.1.1.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
     </Reference>
     <Reference Include="HockeyApp.Android">
       <HintPath>..\..\Components\hockeyappandroid-3.7.1.0\lib\android\HockeyApp.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLPlugin_esqlite3">
+      <HintPath>..\..\packages\SQLitePCL.plugin.sqlite3.android.0.9.3\lib\MonoAndroid\SQLitePCLPlugin_esqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCL.raw">
+      <HintPath>..\..\packages\SQLitePCL.raw.0.9.3\lib\MonoAndroid\SQLitePCL.raw.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCL.batteries">
+      <HintPath>..\..\packages\SQLitePCL.bundle_green.0.9.3\lib\MonoAndroid\SQLitePCL.batteries.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -230,6 +230,18 @@
     </AndroidAsset>
     <AndroidAsset Include="..\data\tilemap.jp\NaraHinan\lib\images\icons-36-white.png">
       <Link>Assets\data\tilemap.jp\NaraHinan\lib\images\icons-36-white.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\data\tilemap.jp\NaraHinan\katsudanso_hanrei.html">
+      <Link>Assets\data\tilemap.jp\NaraHinan\katsudanso_hanrei.html</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\data\tilemap.jp\NaraHinan\katsudanso_tsuite.html">
+      <Link>Assets\data\tilemap.jp\NaraHinan\katsudanso_tsuite.html</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\data\tilemap.jp\NaraHinan\shicchi_hanrei.html">
+      <Link>Assets\data\tilemap.jp\NaraHinan\shicchi_hanrei.html</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\data\tilemap.jp\NaraHinan\shicchi_tsuite.html">
+      <Link>Assets\data\tilemap.jp\NaraHinan\shicchi_tsuite.html</Link>
     </AndroidAsset>
   </ItemGroup>
   <ItemGroup>

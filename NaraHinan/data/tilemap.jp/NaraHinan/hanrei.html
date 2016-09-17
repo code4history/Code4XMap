@@ -23,33 +23,40 @@
   <script src="lib/jquery.mobile-1.1.1.min.js"></script>
 </head>
 <body>
+<div data-role="page">
+  <div data-role="header">
+    <h1>奈良市避難所マップについて</h1>
+  </div>
 
-  <!-- ぺージ -->
-  <div data-role="page" id="page1" data-theme="d">
-    <div data-role="content" data-theme="d">
-    <h3>Code for NARAについて</h3>
-	<p>「奈良を知り、奈良を育む」という理念に基づき、ITを活用して慣らしをより良くしていくための団体です。 奈良市の特徴を活かし、地域活性化にも貢献すべく活動中です。<br></p>
-	<ul>
-		<li>facebook: <a href="browser:https://www.facebook.com/Code4Nara">www.facebook.com/Code4Nara</a></li>
-		<li>Twitter: <a href="browser:https://twitter.com/Code4Nara">@Code4Nara</a></li>
-	</ul>
+    <div data-role="content">
+        <h3>Code for NARAについて</h3>
+        <p>「奈良を知り、奈良を育む」という理念に基づき、ITを活用して慣らしをより良くしていくための団体です。 奈良市の特徴を活かし、地域活性化にも貢献すべく活動中です。</p>
+        <ul data-role="listview" data-theme="d">
+            <li data-for="fb"><a href="browser:https://www.facebook.com/Code4Nara">facebook</a></li>
+            <li data-for="tw"><a href="browser:https://twitter.com/Code4Nara">Twitter</a></li>
+        </ul>
     </div>
-    <div data-role="content" data-theme="d">
-    <h3>このアプリケーションについて</h3>
-	<p>このアプリケーションは、奈良市の避難所オープンデータを用いてその場所をマッピングしたものです。<br>
-	また、国土地理院の都市圏活断層マップ、明治期の低湿地マップ等も背景に表示しております。<br>
-	許諾などが取れれば、奈良市など作成のハザードマップなども主題図として一緒に閲覧できるアプリにしたいと考えております。<br>
-	<br>
-	また、同じプログラムを利用した他地域他テーマでのアプリ作成等も可能です。<br>
-	Code for NARAまでお問い合わせください。</p>
+
+    <div data-role="content">
+        <h3>このアプリケーションについて</h3>
+        <p>このアプリケーションは、奈良市の避難所オープンデータを用いてその場所をマッピングしたものです。また、国土地理院の都市圏活断層マップ、明治期の低湿地マップ等も背景に表示しております。許諾などが取れれば、奈良市など作成のハザードマップなども主題図として一緒に閲覧できるアプリにしたいと考えております。</p>
+        <p>また、同じプログラムを利用した他地域他テーマでのアプリ作成等も可能です。Code for NARAまでお問い合わせください。ソースコードは以下のgithubリポジトリでMITライセンスで公開されております。</p>
+        <ul data-role="listview" data-theme="d">
+            <li data-for="github"><a href="browser:https://github.com/code4nara/Code4XMap">github</a></li>
+        </ul>
     </div>
-    <div data-role="content" data-theme="d">
-    <h3>ライセンス</h3>
-	<p>このアプリケーションは以下の著作物を利用しています。</p>
-	<ul>
-		<li>避難所データ、奈良市、<a href="browser:http://creativecommons.org/licenses/by/2.1/jp/">クリエイティブ・コモンズ・ライセンス 表示 2.1</a></li>
-		<li>背景主題図、国土地理院、<a href="browser:http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html">国土地理院コンテンツ利用規約</a></li>			
-	</ul>
+
+    <div data-role="content">
+        <h3>ライセンス</h3>
+        <p>このアプリケーションは以下の著作物を利用しています。</p>
+        <ul data-role="listview" data-theme="d">
+            <li data-theme="b">避難所データ、奈良市</li>
+            <li data-for="hinanjo_data"><a href="browser:http://www.city.nara.lg.jp/www/contents/1400827150843/">奈良市オープンデータカタログ</a></li>
+            <li data-for="hinanjo_data_license"><a href="browser:http://creativecommons.org/licenses/by/2.1/jp/">クリエイティブ・コモンズ・ライセンス 表示 2.1</a></li>
+            <li data-theme="b">背景主題図、国土地理院</li>
+            <li data-for="chizu_data"><a href="browser:http://maps.gsi.go.jp/help/#tech">地理院地図技術情報</a></li>
+            <li data-for="chizu_data_license"><a href="browser:http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html">国土地理院コンテンツ利用規約</a></li>
+        </ul>
     </div>
 
     <div data-role="content">
@@ -68,13 +75,18 @@
         <h3>背景主題図 (地理院地図のコンテンツを利用)</h3>
         <ul data-role="listview" data-theme="d">
 			<li data-theme="b">都市圏活断層図</li>
-            <li data-for="danso_hanrei"><a rel="external" href="hinanjyo.html" hgref="https://docs.google.com/viewer?url=http://www.gsi.go.jp/common/000084060.pdf">凡例を表示</a></li>
-            <li data-for="danso_tebiki"><a rel="external" href="http://www.gsi.go.jp/bousaichiri/use.html">利用の手引</a></li>
+            <li data-for="danso_hanrei"><a rel="external" href="katsudanso_hanrei.html">凡例を表示</a></li>
+            <li data-for="danso_tebiki"><a rel="external" href="katsudanso_tsuite.html">都市圏活断層図について</a></li>
 			<li data-theme="b">明治期の低湿地データ</li>
-			<li data-for="shicchi_hanrei"><a rel="external" href="hinanjyo.html" hgref="https://docs.google.com/viewer?url=http://cyberjapandata.gsi.go.jp/legend/SWALE_hanrei.pdf">凡例を表示</a></li>
-            <li data-for="shicchi_tebiki"><a rel="external" href="http://www.gsi.go.jp/bousaichiri/lc_meiji.html">利用の手引</a></li>
+			      <li data-for="shicchi_hanrei"><a rel="external" href="shicchi_hanrei.html">凡例を表示</a></li>
+            <li data-for="shicchi_tebiki"><a rel="external" href="shicchi_tsuite.html">明治期の低湿地について</a></li>
         </ul>
     </div>
+
+  <div data-role="footer">
+    <h3>Coutegy of Code for Nara, etc.</h3>
+  </div>
+
   </div>
 </body>
 </html>

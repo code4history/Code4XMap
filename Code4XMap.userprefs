@@ -1,27 +1,9 @@
 ﻿<Properties StartupConfiguration="{B2184057-0A4F-4A34-B90E-C79E84D8EDC6}|Default">
   <MonoDevelop.Ide.ItemProperties.library.Code4XMap.Code4XMap.Droid PreferredExecutionTarget="Android.003e823f2559cb58" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Code4XMap/Code4XMap.Droid/src/Fragment/CXWebFragment.cs">
-    <Files>
-      <File FileName="Code4XMap/Code4XMap.Touch/src/View/CXWebView.cs" Line="94" Column="1" />
-      <File FileName="NaraHinan/NaraHinan.Droid/Resources/values/colors.xml" Line="5" Column="37" />
-      <File FileName="NaraHinan/NaraHinan.Touch/Info.plist" />
-      <File FileName="NaraHinan/NaraHinan.Touch/apikey.plist" />
-      <File FileName="NaraHinan/NaraHinan.Droid/apikey.xml" Line="1" Column="1" />
-      <File FileName="NaraHinan/data/manifest.json" Line="1" Column="1" />
-      <File FileName="NaraHinan/data/tilemap.jp/NaraHinan/hanrei.html" Line="23" Column="56" />
-      <File FileName="Code4XMap/Code4XMap.Shared/src/Core/CXTabController.cs" Line="29" Column="1" />
-      <File FileName="Code4XMap/Code4XMap.Touch/src/CXWebController_iOS.cs" Line="11" Column="1" />
-      <File FileName="Code4XMap/Code4XMap.Droid/src/View/CXWebView.cs" Line="155" Column="1" />
-      <File FileName="Code4XMap/Code4XMap.Shared/src/Core/CXStorageManager.cs" Line="33" Column="5" />
-      <File FileName="Code4XMap/Code4XMap.Touch/src/Fragment/CXWebFragment.cs" Line="48" Column="22" />
-      <File FileName="Code4XMap/Code4XMap.Droid/src/Fragment/CXWebFragment.cs" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.ItemProperties.appli.NaraHinan.NaraHinan.Droid PreferredExecutionTarget="Android.003e823f2559cb58" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.ItemProperties.appli.NaraHinan.NaraHinan.Touch PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.7a0bf5f25e26a993a5e36575c91abe8d505c8af3" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

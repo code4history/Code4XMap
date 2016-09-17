@@ -184,6 +184,18 @@
     <Content Include="..\data\tilemap.jp\NaraHinan\lib\jquery.mobile-1.1.1.min.js">
       <Link>data\tilemap.jp\NaraHinan\lib\jquery.mobile-1.1.1.min.js</Link>
     </Content>
+    <Content Include="..\data\tilemap.jp\NaraHinan\katsudanso_hanrei.html">
+      <Link>data\tilemap.jp\NaraHinan\katsudanso_hanrei.html</Link>
+    </Content>
+    <Content Include="..\data\tilemap.jp\NaraHinan\katsudanso_tsuite.html">
+      <Link>data\tilemap.jp\NaraHinan\katsudanso_tsuite.html</Link>
+    </Content>
+    <Content Include="..\data\tilemap.jp\NaraHinan\shicchi_hanrei.html">
+      <Link>data\tilemap.jp\NaraHinan\shicchi_hanrei.html</Link>
+    </Content>
+    <Content Include="..\data\tilemap.jp\NaraHinan\shicchi_tsuite.html">
+      <Link>data\tilemap.jp\NaraHinan\shicchi_tsuite.html</Link>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="..\resources\pins\first_mdpi.png">
