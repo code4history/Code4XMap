@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{B2184057-0A4F-4A34-B90E-C79E84D8EDC6}|Default">
   <MonoDevelop.Ide.ItemProperties.library.Code4XMap.Code4XMap.Droid PreferredExecutionTarget="Android.003e823f2559cb58" />
   <MonoDevelop.Ide.Workbench />
-  <MonoDevelop.Ide.ItemProperties.appli.NaraHinan.NaraHinan.Droid PreferredExecutionTarget="Android.003e823f2559cb58" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
-  <MonoDevelop.Ide.ItemProperties.appli.NaraHinan.NaraHinan.Touch PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.7a0bf5f25e26a993a5e36575c91abe8d505c8af3" />
+  <MonoDevelop.Ide.ItemProperties.appli.NaraHinan.NaraHinan.Droid PreferredExecutionTarget="Android.And4.2" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.appli.NaraHinan.NaraHinan.Touch PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F7A2800D-EBA1-44F2-9FB4-71E64326D181" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

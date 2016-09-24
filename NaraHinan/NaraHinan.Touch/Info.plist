@@ -22,10 +22,6 @@
 	</array>
 	<key>CFBundleDisplayName</key>
 	<string>奈良市避難所マップ</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.20</string>
-	<key>CFBundleVersion</key>
-	<string>1.20</string>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Icon.png</string>
@@ -39,5 +35,9 @@
 	<string>地図上の現在地表示に利用します</string>
 	<key>CFBundleName</key>
 	<string>奈良市避難所マップ</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.00</string>
+	<key>CFBundleVersion</key>
+	<string>2.00</string>
 </dict>
 </plist>
